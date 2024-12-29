@@ -1,0 +1,88 @@
+/* Reset de margem e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definir a fonte base */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculator {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+  }
+  
+  .display {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+  }
+  
+  #display {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    outline: none;
+  }
+  
+  /* Estilizar os botões */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #2e2e2e;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  .operator {
+    background-color: #f08a5d;
+  }
+  
+  .operator:hover {
+    background-color: #e76f51;
+  }
+  
+  .equals {
+    background-color: #4caf50;
+    grid-column: span 2;
+  }
+  
+  .equals:hover {
+    background-color: #45a049;
+  }
+  
+  /* Efeito de transição e hover */
+  button:active {
+    transform: scale(0.95);
+  }
+  
